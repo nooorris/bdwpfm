@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>想对你说</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit,微软雅黑;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="css/default.css" type="text/css" rel="stylesheet">
+
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script> 
+
+
+</head>
+
+<body background="background.jpg">
+<!-- background="background.jpg" -->
+<audio autoplay="autopaly">
+  <source src="renxi.mp3" type="audio/mp3" />
+</audio>
+<div id="mainDiv">
+		<div id="code">
+			<span class="say">亲爱的化化：</span><br>
+        <span class="say"> </span><br>
+        <span class="say" >&nbsp&nbsp首先当然是祝你生日快乐啦，有些遗憾不能来到你身边，亲手送上礼物和祝福，所以只能将我的心意，藏着这小小的虚拟世界里，祝你在未来的每一天里，都可以被这个世界温柔相待，远离烦恼，永远开开心心地做一个天真可爱的小仙女！</span><br>
+        <span class="say"> 
+	&nbsp&nbsp缘分的巧妙安排，让我们在金秋十月相遇长沙，很幸运一周之后的我们，可以走到一起。不知道你对于这一场偶然的恋爱有着什么样的期待，也不清楚自己算不算一个合格的男友，很遗憾暂时不能牵着你的手，不能和你在校园里漫步，不能陪你一起做很多很多事。理想很美，现实却很残酷，但我相信做难事必有所得，经历过这样一段考验，或许我们可以更加成熟，也能走得更远。过去这将近一个月的相处，感觉很奇妙，也很充实，很高兴每天能跟你一起分享喜悦和烦恼，一起畅谈过去和未来，一起走进彼此的生活。现在还说不上了解你的一切，但确实感觉到了你美好可爱的方方面面。
+	
+	</span><br>
+       
+        <span class="say">&nbsp&nbsp懵懂中带你走入这样一段空间跨越数百公里的异地恋中，很惊喜也很慌张。我这个人也有些木讷吧，或许说不出那么多甜言蜜语，但我愿意尽我所能，努力做好其他男生能做到的一切。第一次给你准备生日礼物，思前想后，结果最后时间不太够了，所以还挺粗糙的，但你放心，下次一定会更好的哦。</span><br>
+        <span class="say" >&nbsp&nbsp未来还长，生活可期。希望能陪你一直走下去哈。</span><br>
+        
+        
+        <span class="say"> </span><br>
+        <span class="say"><span class="space"></span> -- 二零一八年十月初四 --</span> </font>
+ 
+      </div>
+    </div>
+ 
+
+ 			<!-- <span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*2013—02-14,</span><br />
+			<span class="space"/><span class="comments">*2013-02-28.</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			Boy name = <span class="keyword">Mr</span> LI<br />
+			Girl name = <span class="keyword">Mrs</span> ZHANG<br />
+			<span class="comments">// Fall in love river. </span><br />
+			The boy love the girl;<br />
+			<span class="comments">// They love each other.</span><br />
+			The girl loved the boy;<br />
+			<span class="comments">// AS time goes on.</span><br />
+			The boy can not be separated the girl;<br />
+			<span class="comments">// At the same time.</span><br />
+			The girl can not be separated the boy;<br />
+			<span class="comments">// Both wind and snow all over the sky.</span><br />
+			<span class="comments">// Whether on foot or 5 kilometers.</span><br />
+			<span class="keyword">The boy</span> very <span class="keyword">happy</span>;<br />
+			<span class="keyword">The girl</span> is also very <span class="keyword">happy</span>;<br />
+			<span class="placeholder"/><span class="comments">// Whether it is right now</span><br />
+			<span class="placeholder"/><span class="comments">// Still in the distant future.</span><br />
+			<span class="placeholder"/>The boy has but one dream;<br />
+			<span class="comments">// The boy wants the girl could well have been happy.</span><br />
+			<br>
+			<br>
+			I want to say:<br />
+			Baby, I love you forever;<br />   -->
+
+		<!-- </div> -->
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					生日快乐
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					-未完待续-<br/>
+					<div class="signature">--by Norris</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> 
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2013, 2, 28);
+together.setHours(20);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	// timeElapse(together);
+	// setInterval(function () {
+	// 	timeElapse(together);
+	// }, 500);
+	// document.body.background = "background.jpg";
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>   
+
+</body>
+</html>

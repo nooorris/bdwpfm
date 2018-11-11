@@ -154,7 +154,7 @@ var mm=today.getMonth()+1;
 var dd=today.getDate();
 
 function showCal(){
-    return yy+'年'+GetLunarDay(yy,mm,dd);
+    return GetLunarDay(yy,mm,dd);
 } 
 
 var S = {
@@ -168,7 +168,7 @@ var S = {
         if (i !== -1) {
             S.UI.simulate(decodeURI(action).substring(i + 3));
         } else {
-             S.UI.simulate('#circle|亲爱的|化化小仙女|今天是|'+showCal()+'|我们相遇的|第'+timeElapse(today,together)+'天|这个小彩蛋|希望你喜欢|#countdown 5|#show', 3000);
+             S.UI.simulate('#circle|亲爱的|化化小仙女|今天是|'+showCal()+'|我们相识的|第'+timeElapse(today,together)+'天|送你一个|小礼物|#countdown 5|#show', 3000);
 
            // S.UI.simulate('#show', 3000);
         }
