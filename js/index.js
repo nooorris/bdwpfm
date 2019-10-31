@@ -144,7 +144,7 @@ function timeElapse(today,date){
 }
 var today = new Date()
 var together = new Date();
-together.setFullYear(2018,9,6);          //时间年月日（月份选择从0-11）
+together.setFullYear(2018,9,4);          //时间年月日（月份选择从0-11）
 together.setHours(14);                      //小时    
 together.setMinutes(30);                    //分钟
 together.setSeconds(0);                 //秒前一位
@@ -168,7 +168,7 @@ var S = {
         if (i !== -1) {
             S.UI.simulate(decodeURI(action).substring(i + 3));
         } else {
-             S.UI.simulate('#circle|亲爱的|化化小仙女|今天是|'+showCal()+'|我们相识的|第'+timeElapse(today,together)+'天|送你一个|小礼物|#countdown 5|#show', 3000);
+             S.UI.simulate('#circle|美腻的|可爱化|今天是|'+showCal()+'|我们相识的|第'+timeElapse(today,together)+'天|送你一个|小礼物|#countdown 3|#show', 3000);
 
            // S.UI.simulate('#show', 3000);
         }
@@ -182,7 +182,7 @@ var S = {
 
 
 function show() {
-    window.location.href = "2.html";
+    window.location.href = "index2.html";
 }
 
 
